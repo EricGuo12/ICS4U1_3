@@ -116,14 +116,8 @@ function calculatePolynomial() {
         solution += coeffecent[i] * Math.pow(xValue, exponents[i]);
     }
 
-
-
     document.getElementById('polynomial-function').value = equation;
     document.getElementById('polynomial-evaluation').value = "f(" + xValue + ")=" + solution;
-
-
-
-    console.log(solution);
 }
 
 
