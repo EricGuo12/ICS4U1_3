@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Heron's formula</h1>
+    <form id="heron-form">
+        <label for="a">side a:</label><br><br>
+        <input type="number" id="a" required><br><br>
+
+        <label for="b">side b:</label><br><br>
+        <input type="number" id="b" required><br><br>
+
+        <label for="c">side c:</label><br><br>
+        <input type="number" id="c" required><br><br>
+
+        <label>Area(Result):</label><br><br>
+        <input type="text" id="result-heron" readonly><br><br>
+    </form>
+
+    <button type="button" onclick="calculateHeron()">Calculate:</button><br><br>
+
+    <h1>Ambiguous Case</h1>
+    <form id="ambiguous-form">
+        <label for="a-angle-ambiguous">Angle A:</label><br><br>
+        <input type="number" id="a-angle-ambiguous" required><br><br>
+
+        <label for="a-side-ambiguous">side A:</label><br><br>
+        <input type="number" id="a-side-ambiguous" required><br><br>
+
+        <label for="b-side-ambiguous">side B:</label><br><br>
+        <input type="number" id="b-side-ambiguous" required><br><br>
+
+        <label>Triangle Type(Result):</label><br><br>
+        <input type="text" id="ambiguous-result" readonly><br><br>
+    </form>
+    <button type="button" onclick="calculateAmbiguous()">Calculate:</button><br><br>
+
+    <h1>Newton’s Method:</h1>
+    <form id="newton-form">
+        <label for="root-guess">Root Guess:</label><br><br>
+        <input type="number" id="root-guess" required><br><br>
+
+        <label>Root Approximation(Result):</label><br><br>
+        <input type="text" id="newton-result" readonly><br><br>
+    </form>
+    <button type="button" onclick="calculateNewtons()">Calculate:</button><br><br>
+
+    <h1>Polynomial Function:</h1>
+    <form id="polynomial-form">
+        <label for="coeffecients">Coeffecients:</label><br><br>
+        <input type="text" id="coeffecients" required><br><br>
+
+        <label for="exponents">Exponents:</label><br><br>
+        <input type="text" id="exponents" required><br><br>
+
+        <label for="x-value">X-Value:</label><br><br>
+        <input type="text" id="x-value" required><br><br>
+
+        <label>Polynomial Function(Result):</label><br><br>
+        <input type="text" id="polynomial-function" readonly><br><br>
+
+        <label>Polynomial Evaluation(Result):</label><br><br>
+        <input type="text" id="polynomial-evaluation" readonly><br><br>
+
+
+        <button type="button" onclick="calculatePolynomial()">Calculate:</button><br><br>
+    </form>
+
+</body>
+
+</html>
+
+<!-- "alt shift f"
+"remove unesary code"
+"if else, use turnarry"
+"cases when delaring variables"
+"" -->
